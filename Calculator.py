@@ -1,9 +1,15 @@
+# Calculator Update(2.0)---------------------------------------------------------------------------------
+# > continuous answer posting
+# > Bracets inserting in equation with Error handling
+# > prevantion from re-size
+
 #  Calculator -----------------------------------------------------------------------------------------------
 
 import tkinter as tk
 rw = tk.Tk()
 rw.title('Calculator')
-rw.geometry('305x400+300+100')
+rw.geometry('303x397+300+100')
+rw.resizable(width=False, height=False)
 
 fm1 = tk.Frame(master = rw, height = 400, width=305, bg = 'black')
 fm1.pack()
@@ -19,6 +25,21 @@ def ce():
     en2.delete(0,tk.END)
     lb1 = tk.Label(fm1,text = '',bg = 'black',fg = 'white',bd = 1,width = 15, font = ('Arial,Italic',25)).place(x = 7, y = 20)
 
+def brcs():
+    b = en2.get()
+    try:
+        if (b.count(')')+b.count('('))%2 == 0:
+            en2.insert(tk.END ,'(')
+        else:
+            en2.insert(tk.END ,')')
+            x = en2.get() 
+            lb1 = tk.Label(fm1,text = str(eval(x)),bg = 'black',fg = 'gray',bd = 1,width = 15, 
+                           font = ('Arial,Italic',25)).place(x = 7, y = 20)
+    except TypeError:
+        print('Bracket Error:')
+        lb1 = tk.Label(fm1,text = 'Missing operator at \n starting or closing of bracktes',
+                       bg = 'black',fg = 'gray',bd = 1,width = 30, font = ('Arial,Italic',12)).place(x = 7, y = 20)
+    
 def sign(s):
     en2.insert(0,s)
     
@@ -29,8 +50,10 @@ def eq():
 
 def btn_clk(number):
     en2.insert(tk.END ,number)
-
+    x = en2.get() 
+    lb1 = tk.Label(fm1,text = str(eval(x)),bg = 'black',fg = 'gray',bd = 1,width = 15, font = ('Arial,Italic',25)).place(x = 7, y = 20)
     
+
 # Last row '+/-' , '0','.','='----------------------------------------------------------------------------
 # > '+/-'
 btpm = tk.Button(master = fm1, text = "+/-", bg = 'black',fg = 'white',
@@ -144,10 +167,10 @@ btce = tk.Button(master = fm1, text = "CE", bg = 'gray',fg = 'black',
                 bd = None , height = 2, width = 9, command = ce)
 btce.place(x= 2,y = 123)
 
-# > 'C'
-btc = tk.Button(master = fm1, text = "C", bg = 'gray',fg = 'black',
+# > '()'
+btc = tk.Button(master = fm1, text = "( )", bg = 'gray',fg = 'black',
                 activeforeground = 'white', activebackground = 'black', 
-                bd = None , height = 2, width = 9, command = ce)
+                bd = None , height = 2, width = 9, command = brcs)
 btc.place(x= 77,y = 123)
 
 # > 'DEL'
