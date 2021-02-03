@@ -151,7 +151,7 @@ btc = tk.Button(master = fm1, text = "C", bg = 'gray',fg = 'black',
 btc.place(x= 77,y = 123)
 
 # > 'DEL'
-btdel = tk.Button(master = fm1, text = "", bg = 'gray',fg = 'black',
+btdel = tk.Button(master = fm1, text = "≪", bg = 'gray',fg = 'black',
                 activeforeground = 'white', activebackground = 'black', 
                 bd = None , height = 2, width = 9, command = delete)
 btdel.place(x= 152,y = 123)
