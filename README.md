@@ -12,4 +12,7 @@ I use different widgets to create buttons, labels, frames and entry field.
 
 > Also made fumctions for getting values from entry field, evalute the equation.
 
+## Screen Look:
+
+
 ![alt text](https://github.com/jaykothari-github/Calculator/blob/main/Calculator.jpg?raw=true)
