@@ -54,28 +54,29 @@ def btn_clk(number):
     lb1 = tk.Label(fm1,text = str(eval(x)),bg = 'black',fg = 'gray',bd = 1,width = 15, font = ('Arial,Italic',25)).place(x = 7, y = 20)
     
 
+    
 # Last row '+/-' , '0','.','='----------------------------------------------------------------------------
 # > '+/-'
 btpm = tk.Button(master = fm1, text = "+/-", bg = 'black',fg = 'white',
-                activeforeground = 'black', activebackground = 'gray' ,
+                activeforeground = 'black', activebackground = '#453f3f' ,
                 bd = None , height = 3, width = 9, command = lambda : sign('-'))
 btpm.place(x= 2,y = 340)
 
 # > '0'
 bt0 = tk.Button(master = fm1, text = "0", bg = 'black',fg = 'white',
-                activeforeground = 'black', activebackground = 'gray' , 
+                activeforeground = 'black', activebackground = '#453f3f' , 
                 bd = None , height = 3, width = 9, command = lambda : btn_clk(0))
 bt0.place(x= 77,y = 340)
 
 # > '.'
 btdt = tk.Button(master = fm1, text = ".\n(dot)", bg = 'black',fg = 'white',
-                activeforeground = 'black', activebackground = 'gray' , 
+                activeforeground = 'black', activebackground = '#453f3f' , 
                 bd = None , height = 3, width = 9,command = lambda : btn_clk('.'))
 btdt.place(x= 152,y = 340)
 
 # > '='
-bteq = tk.Button(master = fm1, text = "=", bg = 'lightblue',fg = 'black',
-                activeforeground = 'white', activebackground = 'blue' , 
+bteq = tk.Button(master = fm1, text = "=", bg = '#14a4c4',fg = 'black',
+                activeforeground = 'white', activebackground = 'lightblue' , 
                 bd = 1, height = 3, width = 9, command = eq)
 bteq.place(x= 228,y = 340)
 
@@ -84,24 +85,24 @@ bteq.place(x= 228,y = 340)
 
 # > '1'
 bt1 = tk.Button(master = fm1, text = "1", bg = 'black',fg = 'white',
-                activeforeground = 'black', activebackground = 'gray' ,
+                activeforeground = 'black', activebackground = '#453f3f' ,
                 bd = None , height = 3, width = 9, command = lambda : btn_clk(1))
 bt1.place(x= 2,y = 282)
 
 # > '2'
 bt2 = tk.Button(master = fm1, text = "2", bg = 'black',fg = 'white',
-                activeforeground = 'black', activebackground = 'gray' , 
+                activeforeground = 'black', activebackground = '#453f3f' , 
                 bd = None , height = 3, width = 9, command = lambda : btn_clk(2))
 bt2.place(x= 77,y = 282)
 
 # > '3'
 bt3 = tk.Button(master = fm1, text = "3", bg = 'black',fg = 'white',
-                activeforeground = 'black', activebackground = 'gray' , 
+                activeforeground = 'black', activebackground = '#453f3f' , 
                 bd = None , height = 3, width = 9, command = lambda : btn_clk(3))
 bt3.place(x= 152,y = 282)
 
 # > '+'
-btpls = tk.Button(master = fm1, text = "+", bg = 'gray',fg = 'black',
+btpls = tk.Button(master = fm1, text = "+", bg = '#453f3f',fg = 'white',
                 activeforeground = 'white', activebackground = 'black' , 
                 bd = None , height = 3, width = 9, command = lambda : btn_clk('+'))
 btpls.place(x= 228,y = 282)
@@ -110,24 +111,24 @@ btpls.place(x= 228,y = 282)
 
 # > '4'
 bt4 = tk.Button(master = fm1, text = "4", bg = 'black',fg = 'white',
-                activeforeground = 'black', activebackground = 'gray' ,
+                activeforeground = 'black', activebackground = '#453f3f' ,
                 bd = None , height = 3, width = 9, command = lambda : btn_clk(4))
 bt4.place(x= 2,y = 224)
 
 # > '5'
 bt5 = tk.Button(master = fm1, text = "5", bg = 'black',fg = 'white',
-                activeforeground = 'black', activebackground = 'gray' , 
+                activeforeground = 'black', activebackground = '#453f3f' , 
                 bd = None , height = 3, width = 9, command = lambda : btn_clk(5))
 bt5.place(x= 77,y = 224)
 
 # > '6'
 bt6 = tk.Button(master = fm1, text = "6", bg = 'black',fg = 'white',
-                activeforeground = 'black', activebackground = 'gray' , 
+                activeforeground = 'black', activebackground = '#453f3f' , 
                 bd = None , height = 3, width = 9, command = lambda : btn_clk(6))
 bt6.place(x= 152,y = 224)
 
 # > '-'
-btmns = tk.Button(master = fm1, text = "-", bg = 'gray',fg = 'black',
+btmns = tk.Button(master = fm1, text = "-", bg = '#453f3f',fg = 'white',
                 activeforeground = 'white', activebackground = 'black', 
                 bd = None , height = 3, width = 9, command = lambda : btn_clk('-'))
 btmns.place(x= 228,y = 224)
@@ -136,51 +137,51 @@ btmns.place(x= 228,y = 224)
 
 # > '7'
 bt7 = tk.Button(master = fm1, text = "7", bg = 'black',fg = 'white',
-                activeforeground = 'black', activebackground = 'gray' ,
+                activeforeground = 'black', activebackground = '#453f3f' ,
                 bd = None , height = 3, width = 9, command = lambda : btn_clk(7))
 bt7.place(x= 2,y = 166)
 
 # > '8'
 bt8 = tk.Button(master = fm1, text = "8", bg = 'black',fg = 'white',
-                activeforeground = 'black', activebackground = 'gray' , 
+                activeforeground = 'black', activebackground = '#453f3f' , 
                 bd = None , height = 3, width = 9, command = lambda : btn_clk(8))
 bt8.place(x= 77,y = 166)
 
 # > '9'
 bt9 = tk.Button(master = fm1, text = "9", bg = 'black',fg = 'white',
-                activeforeground = 'black', activebackground = 'gray' , 
+                activeforeground = 'black', activebackground = '#453f3f' , 
                 bd = None , height = 3, width = 9, command = lambda : btn_clk(9))
 bt9.place(x= 152,y = 166)
 
 # > 'x'
-btmul = tk.Button(master = fm1, text = "x", bg = 'gray',fg = 'black',
+btmul = tk.Button(master = fm1, text = "x", bg = '#453f3f',fg = 'white',
                 activeforeground = 'white', activebackground = 'black', 
                 bd = None , height = 3, width = 9, command = lambda : btn_clk('*'))
 btmul.place(x= 228,y = 166)
 
 
-# Last Fifth row 'CE','C','DEL','÷'----------------------------------------------------------
+# Last Fifth row 'CE','( )','DEL','÷'----------------------------------------------------------
 
 # > 'CE'
-btce = tk.Button(master = fm1, text = "CE", bg = 'gray',fg = 'black',
-                activeforeground = 'white', activebackground = 'black',
+btce = tk.Button(master = fm1, text = "CE", bg = '#eb4444',fg = 'white',
+                activeforeground = 'black', activebackground = '#e66c6c',
                 bd = None , height = 2, width = 9, command = ce)
 btce.place(x= 2,y = 123)
 
 # > '()'
-btc = tk.Button(master = fm1, text = "( )", bg = 'gray',fg = 'black',
+btc = tk.Button(master = fm1, text = "( )", bg = '#453f3f',fg = 'white',
                 activeforeground = 'white', activebackground = 'black', 
                 bd = None , height = 2, width = 9, command = brcs)
 btc.place(x= 77,y = 123)
 
 # > 'DEL'
-btdel = tk.Button(master = fm1, text = "≪", bg = 'gray',fg = 'black',
+btdel = tk.Button(master = fm1, text = "≪", bg = '#453f3f',fg = 'white',
                 activeforeground = 'white', activebackground = 'black', 
                 bd = None , height = 2, width = 9, command = delete)
 btdel.place(x= 152,y = 123)
 
 # > '÷'
-btdiv = tk.Button(master = fm1, text = "÷", bg = 'gray',fg = 'black',
+btdiv = tk.Button(master = fm1, text = "÷", bg = '#453f3f',fg = 'white',
                   activeforeground = 'white', activebackground = 'black', 
                   bd = None , height = 2, width = 9, command = lambda : btn_clk('/'))
 btdiv.place(x= 228,y = 123)
