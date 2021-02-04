@@ -10,7 +10,7 @@ Create a Calculator App using Tkinter in Python
 > Basically, This project is part of "Python GUI". And I've used **_tkinter_** module into it.
 I use different widgets to create buttons, labels, frames and entry field.
 
-> Also made fumctions for getting values from entry field, evalute the equation.
+> While, For getting values from entry field and evalute the equation. I've made functions.
 
 ## Screen Look:
 
