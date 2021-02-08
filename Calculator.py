@@ -15,6 +15,7 @@ rw = tk.Tk()
 rw.title('Calculator')
 rw.geometry('303x397+300+100')
 rw.resizable(width=False, height=False)
+rw.iconbitmap('Calc_icon.ico')
 
 fm1 = tk.Frame(master = rw, height = 400, width=305, bg = '#101010')
 fm1.pack()
@@ -103,7 +104,6 @@ bteq.place(x= 228,y = 340)
 
 
 # Second row '1','2','3','+'----------------------------------------------------------
-
 # > '1'
 bt1 = tk.Button(master = fm1, text = "1", bg = 'black',fg = 'white',
                 activeforeground = 'black', activebackground = '#453f3f' ,
@@ -129,7 +129,6 @@ btpls = tk.Button(master = fm1, text = "+", bg = '#453f3f',fg = 'white',
 btpls.place(x= 228,y = 282)
 
 # # Third row '4','5','6','-'----------------------------------------------------------
-
 # > '4'
 bt4 = tk.Button(master = fm1, text = "4", bg = 'black',fg = 'white',
                 activeforeground = 'black', activebackground = '#453f3f' ,
@@ -155,7 +154,6 @@ btmns = tk.Button(master = fm1, text = "-", bg = '#453f3f',fg = 'white',
 btmns.place(x= 228,y = 224)
 
 # Forth row '7','8','9','x'----------------------------------------------------------
-
 # > '7'
 bt7 = tk.Button(master = fm1, text = "7", bg = 'black',fg = 'white',
                 activeforeground = 'black', activebackground = '#453f3f' ,
@@ -182,7 +180,6 @@ btmul.place(x= 228,y = 166)
 
 
 # Last Fifth row 'CE','( )','DEL','÷'----------------------------------------------------------
-
 # > 'CE'
 btce = tk.Button(master = fm1, text = "CE", bg = '#eb4444',fg = 'white',
                 activeforeground = 'black', activebackground = '#e66c6c',
