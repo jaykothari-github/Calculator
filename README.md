@@ -14,4 +14,4 @@ I use different widgets to create buttons, labels, frames and entry field.
 
 ## Screen Look:
 
-![alt text](https://github.com/jaykothari-github/Calculator/blob/main/Calculator_look.jpg?raw=true)
+![Calculator Look](https://github.com/jaykothari-github/Calculator/blob/main/Calculator_look.jpg?raw=true)
