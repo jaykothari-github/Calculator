@@ -210,3 +210,4 @@ en2 = tk.Entry(fm1,bg = '#101010',fg = 'white',bd = 0,width = 16, font = ('Arial
 en2.place(x= 7, y = 70)
 
 rw.mainloop()
+# actiond
